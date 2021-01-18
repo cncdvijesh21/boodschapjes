@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	   	<!-- css-link -->
+	   	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	   	<!-- css-link-end -->
+
+	 	<!-- font-awesome -->
+		<script type="text/javascript" src='https://kit.fontawesome.com/a076d05399.js'></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="screen" />
+    	<link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet" type="text/css" media="screen" />
+   		<!-- font-awesome end -->
+   		<!-- slider -->
+   		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" type="text/css" media="screen" />
+  		<script type="text/javascript" src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  		<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+  <!-- slider-end -->
+  	    <script type="text/javascript">
+		    jQuery(document).ready(function(){
+		      jQuery('.slider-area').bxSlider({
+				pager: false,
+				controls: true,
+				auto: true
+		      });
+
+		      jQuery('.courses_slider').bxSlider({
+			    slideWidth: 380,
+			    minSlides: 1,
+			    maxSlides: 4,
+			    moveSlides: 1,
+			    slideMargin: 30,
+			    auto: true,
+			    pager: false
+			  });
+
+			  jQuery('#testimonial_carousel').flexslider({
+			    animation: "slide",
+			    controlNav: false,
+			    animationLoop: false,
+			    slideshow: true,
+			    itemWidth: 90,
+			    itemMargin: 30,
+			    asNavFor: '#testimonial_slider'
+			  });
+			 
+			  jQuery('#testimonial_slider').flexslider({
+			    animation: "fade",
+			    controlNav: false,
+			    animationLoop: false,
+			    slideshow: true,
+			    sync: "#testimonial_carousel"
+			  });
+		    });
+	  </script>
+
+</head>
+<body>
+	<header>
+		<div class="top-header">
+			<div class="clear-fix container">
+				<ul class="top-header-ul">
+						<li>
+							<ul class="top-one-ul">
+								<li>Follow Us:</li>
+								<li>
+									<a href="#" class="fa fa-facebook" target="_blank"></a>
+								</li>
+								<li>
+									<a href="#" class="fa fa-linkedin" target="_blank"></a>
+								</li>
+								<li>
+									<a href="#" target="_blank" class="fa fa-twitter"></a>
+								</li>
+							</ul>
+						</li>
+						<li class="email-li">
+							Email Us:<a href="mailto:yourmail@gmail.com" class="email">  yourmail@gmail.com</a>
+						</li>
+						<li class="phone-li">
+							Call Us:<a href="tel:9876543210" class="phone"> 9876543210</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottum-header">
+			<div class="clear-fix container">
+				<div class="logo">
+					<img src="images/logo.jpg">
+				</div>
+				<div class="main-menu">
+				 <ul class="clear-fix">
+				 	<li><a href="#">HOME</a></li>
+				 	<li><a href="#">ABOUT US</a></li>
+				 	<li><a href="#">ONLINE COURSE</a></li>
+				 	<li><a href="#">HOW IT WORK</a></li>
+				 	<li><a href="#">BLOG</a></li>
+				 	<li><a href="#">CONTACT</a></li>
+				 </ul>
+				</div>
+				<div class="login-div">
+				 <ul class="clear-fix">
+				 	<li><a href="#"><i class="fa fa-search"></i></a></li>
+				 	<li><a class="primary_button" href="#"><span><img src="images/login-icon.png"></span>LOGIN/REGISTER</a></li>
+				 </ul>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+	<!-- slider -->
+   <div class="home-slider">
+   	  <ul class="slider-area">
+   		<!-- slide-1 -->
+	   		<li class="slider-li slider-1">
+	                 <div class="descri-box">
+			              <h2>Welcome To Cea-Institute.com - Studio</h2>
+			              <p>Studio helps manage your online courses, so you can focus on teaching them
+			              </p>
+	                   	  <a href="#" class="primary_button">Start Learning Now</a>
+	              	</div>
+	        </li>
+<!-- slide-1-end -->
+<!-- slide-2 -->
+	        <li class="slider-li slider-2">
+	                 <div class="descri-box">
+			              <h2>Welcome To Cea-Institute.com - Studio</h2>
+			              <p>Studio helps manage your online courses, so you can focus on teaching them
+			              </p>
+	                   	  <a href="#" class="primary_button">Start Learning Now</a>
+	              	</div>
+	        </li>
+<!-- slide-2-end -->
+     	</ul>
+   </div> 
+   <!-- slider end -->
+
+ <!-- Our Popular Courses -->
+<div class="popular_courses_wr">
+	<div class="container clear-fix">
+		<h2>Our Popular Courses</h2>
+		<p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. 
+The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		<ul class="courses_slider courses_wr clear-fix">
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_1.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_2.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_3.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+		</ul>
+
+		<a class="primary_button" href="#">All popular courses</a>
+	</div>
+</div>
+<!--end Our Popular Courses  -->
+
+<!-- about -->
+   		<div class="about-wr">
+			<div class="container clear-fix">
+
+				<div class="left-about">
+				</div>	
+				<div class="right-about">
+					<h2>About Us</h2>
+						<p>The response to your MasterStudy has been really overwhelming! Those who participated
+						in the workshop are spreading the word here on campus and the “buzz” is on. The VP of 
+						Instruction wants you to come back! Her goal is to have more faculty trained. She also 
+						wants to attend a workshop herself. 
+						</p>
+						<a class="primary_button" href="#">Read More</a>
+				</div>
+            </div> 
+      </div> 
+<!-- about-end --> 
+
+ <!-- Our Courses Section-->
+<div class="popular_courses_wr our_courses_wr">
+	<div class="container clear-fix">
+		<h2>Our Courses</h2>
+
+	</div>
+	<ul class="our_courses_tab">
+		<li><a class="active" href="#">Passive Solar Heating</a></li>
+		<li><a href="#">Solar Power Plants</a></li>
+		<li><a href="#">Solar Water Heating Systems</a></li>
+		<li><a href="#">Photovoltaic Systems</a></li>
+	</ul>
+	<div class="container clear-fix">
+	
+		<ul class="courses_wr clear-fix">
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_1.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_2.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_3.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_4.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_5.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_6.jpg" alt=""/>
+					<span class="course_time">2:30:56</span>
+					<span class="course_price">$35</span>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+					<div class="course_fea clear-fix">
+						<div class="course_timedura">01h 30m</div>
+						<div class="course_rating">
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							<img src="images/star.png" alt=""/>
+							(5.O/235)
+						</div>
+					</div>
+			    </div>
+			</li>
+		</ul>
+
+		<a class="primary_button" href="#">All courses</a>
+	</div>
+</div>
+<!--end Our Popular Courses  -->
+
+<!--Testimonial  -->
+<div class="testimonial-wr">
+	<div class="container clear-fix">
+		<h2>What Our Students Have To Say</h2>
+
+		<div id="testimonial_carousel" class="flexslider">
+		  <ul class="slides">
+		    <li>
+		      <img src="images/testimonial-img1.jpg" />
+		    </li>
+		    <li>
+		      <img src="images/testimonial-img2.jpg" />
+		    </li>
+		    <li>
+		      <img src="images/testimonial-img3.jpg" />
+		    </li>
+		    <li>
+		      <img src="images/testimonial-img4.jpg" />
+		    </li>
+		    <li>
+		      <img src="images/testimonial-img5.jpg" />
+		    </li>
+		  </ul>
+		</div>
+
+		<div id="testimonial_slider" class="flexslider">
+		  <ul class="slides">
+		    <li>
+		      <p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		      <h3>Jack Charlie</h3>
+		      <p class="testmnl-sector">Solar Power Plants</p>
+		    </li>
+		    <li>
+		      <p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		      <h3>Jack Charlie</h3>
+		      <p class="testmnl-sector">Solar Power Plants</p>
+		    </li>
+		    <li>
+		      <p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		      <h3>Jack Charlie</h3>
+		      <p class="testmnl-sector">Solar Power Plants</p>
+		    </li>
+		    <li>
+		      <p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		      <h3>Jack Charlie</h3>
+		      <p class="testmnl-sector">Solar Power Plants</p>
+		    </li>
+		    <li>
+		      <p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		      <h3>Jack Charlie</h3>
+		      <p class="testmnl-sector">Solar Power Plants</p>
+		    </li>
+		  </ul>
+		</div>
+		
+	</div>
+</div>
+
+<!-- News & Blogs -->
+<div class="newsblogs_wr">
+	<div class="container clear-fix">
+		<h2>News and Blog</h2>
+		<p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. </p>
+		<ul class="courses_slider courses_wr clear-fix">
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_7.jpg" alt=""/>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_8.jpg" alt=""/>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+			    </div>
+			</li>
+			<li>
+				<a class="course_imgwr" href="#">
+					<img src="images/courses_9.jpg" alt=""/>
+				</a>
+				<div class="course_content_wr">
+					<span class="course_cat">TECHNOLOGY</span>
+					<h3><a href="#">WE017: 2020 NEC Changes Affecting PV and Energy Storage Systems</a></h3>
+			    </div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--End News & Blogs -->
+
+<!-- newsletter --> 
+ <div class="newsletter-wr">
+ 	<div class="container clear-fix">
+ 		<h2>Subscribe Newsletter</h2>
+		<p>The response to your MasterStudy has been really overwhelming! Those who participatedin the workshop are spreading 
+		the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back!</p>
+		<form class="newsletter_form clear-fix" method="post" action="#">
+			<input class="inputfield"  type="text" name="email" placeholder="Enter Your Email Here" />
+			<input class="primary_button" type="submit" value="subscribe Now"/>
+		</form>
+ 	</div>
+ </div>
+<!-- newsletter-end --> 
+
+	<footer>
+	<div class="footer-content">
+		<div class="top-footer">
+			<div class="container clear-fix">
+				<!-- col-1 -->
+				<div class="col-1 footer-col">
+					<h2>Categories</h2>
+					<ul class="footer-ul footer-ul-1">
+						<li><a href="#">All Courses</a></li>
+						<li><a href="#">Passive Solar Heating</a></li>
+						<li><a href="#">Solar Power Plants</a></li>
+						<li><a href="#">Solar Water Heating Systems</a></li>
+						<li><a href="#">Photovoltaic Systems</a></li>
+					</ul>
+				</div>
+			  <!-- col-1-end -->
+			  <!-- col-2 -->
+				<div class="col-2 footer-col">
+					<h2>Community</h2>
+					<ul class="footer-ul footer-ul-1">
+						<li><a href="#">Go Premium</a></li>
+						<li><a href="#">Team Plans</a></li>
+						<li><a href="#">Refer a Friend</a></li>
+						<li><a href="#">Gift Cards</a></li>
+						<li><a href="#">Scholarships</a></li>
+						<li><a href="#">Free Classes</a></li>
+					</ul>
+				</div>
+				<!-- col-2-end -->
+				<!-- col-3 -->
+				<div class="col-3 footer-col">
+					<h2>Teaching</h2>
+					<ul class="footer-ul footer-ul-1">
+						<li><a href="#">Become a Teacher</a></li>
+						<li><a href="#">Teaching Academy</a></li>
+						<li><a href="#">Teacher Handbook</a></li>
+						<li><a href="#">Partnerships</a></li>
+					</ul>
+				</div>
+				 <!-- col-3-end -->
+				 <!-- col-4 -->
+				 <div class="col-4 footer-col">
+					<h2>Support</h2>
+					<ul class="footer-ul footer-ul-1">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact Support</a></li>
+						<li><a href="#">Forum</a></li>
+					</ul>
+				</div>
+ 				<!-- col-4-end -->
+			</div>			
+		</div>		
+
+		<div class="footer-bottum">
+			<div class="container clear-fix">
+				<div class="left-footer">
+				<p>©2020 CEA Institute @ All Rights Reserved</p>
+				</div>
+				<div class="right-footer">
+					<ul class="social-ul">
+						<li><a href="#" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="#" class="fa fa-linkedin" target="_blank"></a></li>
+						<li><a href="#" target="_blank" class="fa fa-twitter"></a></li>
+					</ul>
+				</div>
+		     </div>
+       	</div>
+ 	</div>
+ </footer>
+
+</body>
+</html>
